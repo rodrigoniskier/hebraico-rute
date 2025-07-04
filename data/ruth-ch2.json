@@ -1,0 +1,31 @@
+
+[
+    {
+        "verseNumber": "2:1",
+        "hebrewText": "וּלְנָעֳמִי מֵידַע לְאִישָׁהּ אִישׁ גִּבּוֹר חַיִל מִמִּשְׁפַּחַת אֱלִימֶלֶךְ וּשְׁמוֹ בֹּעַז",
+        "words": [
+            {
+                "hebrew": "וּלְנָעֳמִי",
+                "transliteration": "ulena'omi",
+                "briefTranslation": "e para Noemi",
+                "contextualTranslation": "E Noemi tinha um parente de seu marido",
+                "lemma": "לְ",
+                "lemmaTranslation": "para, a",
+                "analysis": {
+                    "class": "Preposição",
+                    "didactic": {
+                        "conceptTitle": "Preposição: לְ (le) com sufixo pronominal",
+                        "identification": [
+                            {
+                                "feature": "Preposição",
+                                "indicator": "A preposição לְ (le) significa 'para' ou 'a'."
+                            }
+                        ],
+                        "paradigm": null
+                    }
+                }
+            }
+        ]
+    }
+]
+

@@ -1,0 +1,31 @@
+
+[
+    {
+        "verseNumber": "4:1",
+        "hebrewText": "וּבֹעַז עָלָה הַשַּׁעַר וַיֵּשֶׁב שָׁם וְהִנֵּה הַגֹּאֵל עֹבֵר אֲשֶׁר דִּבֶּר בֹּעַז וַיֹּאמֶר סוּרָה שְׁבָה פֹה פְּלֹנִי אַלְמֹנִי וַיָּסַר וַיֵּשֵׁב",
+        "words": [
+            {
+                "hebrew": "וּבֹעַז",
+                "transliteration": "uVoaz",
+                "briefTranslation": "e Boaz",
+                "contextualTranslation": "E Boaz subiu à porta",
+                "lemma": "בֹּעַז",
+                "lemmaTranslation": "Boaz",
+                "analysis": {
+                    "class": "Nome Próprio",
+                    "didactic": {
+                        "conceptTitle": "Nome Próprio: Boaz",
+                        "identification": [
+                            {
+                                "feature": "Identificação",
+                                "indicator": "Boaz é um nome próprio masculino, personagem central no Livro de Rute."
+                            }
+                        ],
+                        "paradigm": null
+                    }
+                }
+            }
+        ]
+    }
+]
+

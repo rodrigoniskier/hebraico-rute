@@ -1,0 +1,38 @@
+
+[
+    {
+        "verseNumber": "3:1",
+        "hebrewText": "וַתֹּאמֶר לָהּ נָעֳמִי חֲמוֹתָהּ בִּתִּי הֲלֹא אֲבַקֶּשׁ לָךְ מָנוֹחַ אֲשֶׁר יִיטַב לָךְ",
+        "words": [
+            {
+                "hebrew": "וַתֹּאמֶר",
+                "transliteration": "vatto'mer",
+                "briefTranslation": "e ela disse",
+                "contextualTranslation": "Então Noemi, sua sogra, disse a ela",
+                "lemma": "אָמַר",
+                "lemmaTranslation": "dizer",
+                "analysis": {
+                    "class": "Verbo",
+                    "binyan": "Qal",
+                    "tense": "Imperfeito (Waw-Consecutivo)",
+                    "pgn": "3fs",
+                    "didactic": {
+                        "conceptTitle": "Verbo: Qal Imperfeito (Waw-Consecutivo), 3ª Feminino Singular (3fs)",
+                        "identification": [
+                            {
+                                "feature": "Waw-Consecutivo",
+                                "indicator": "O prefixo וַ (waw-consecutivo) indica uma ação sequencial no passado."
+                            },
+                            {
+                                "feature": "Sufixo do Imperfeito",
+                                "indicator": "O sufixo תְּ (tav) indica a 3ª pessoa feminina singular no imperfeito."
+                            }
+                        ],
+                        "paradigm": null
+                    }
+                }
+            }
+        ]
+    }
+]
+

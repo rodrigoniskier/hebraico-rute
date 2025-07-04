@@ -1,0 +1,304 @@
+[
+    {
+        "verseNumber": "1:1",
+        "hebrewText": "וַיְהִי בִּימֵי שְׁפֹט הַשֹּׁפְטִים וַיְהִי רָעָב בָּאָרֶץ וַיֵּלֶךְ אִישׁ מִבֵּית לֶחֶם יְהוּדָה לָגוּר בִּשְׂדֵי מוֹאָב הוּא וְאִשְׁתּוֹ וּשְׁנֵי בָנָיו",
+        "words": [
+            {
+                "hebrew": "וַיְהִי",
+                "transliteration": "vayhi",
+                "briefTranslation": "e aconteceu",
+                "contextualTranslation": "E aconteceu nos dias em que os juízes julgavam",
+                "lemma": "הָיָה",
+                "lemmaTranslation": "ser, acontecer, existir",
+                "analysis": {
+                    "class": "Verbo",
+                    "binyan": "Qal",
+                    "tense": "Imperfeito (Waw-Consecutivo)",
+                    "pgn": "3ms",
+                    "didactic": {
+                        "conceptTitle": "Verbo: Qal Imperfeito (Waw-Consecutivo), 3ª Masculino Singular (3ms)",
+                        "identification": [
+                            {
+                                "feature": "Waw-Consecutivo",
+                                "indicator": "O prefixo וַ (waw-consecutivo) indica uma ação sequencial no passado. Esta forma é característica da narrativa hebraica e converte o imperfeito em uma forma de passado narrativo."
+                            },
+                            {
+                                "feature": "Prefixos do Imperfeito",
+                                "indicator": "O prefixo יְ (yod) indica a 3ª pessoa masculina singular no imperfeito. A vocalização com sheva (יְ) é típica desta conjugação."
+                            },
+                            {
+                                "feature": "Tronco (Binyan) - Qal",
+                                "indicator": "A ausência de prefixos ou infixes característicos de outros binyanim indica que este é o tronco Qal (simples ativo)."
+                            }
+                        ],
+                        "paradigm": {
+                            "headerRow": ["Pessoa", "Masculino", "Feminino"],
+                            "dataRows": [
+                                ["1cs", "אֶהְיֶה", "אֶהְיֶה"],
+                                ["2ms", "תִּהְיֶה", "תִּהְיִי"],
+                                ["3ms", "יִהְיֶה", "תִּהְיֶה"]
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "hebrew": "בִּימֵי",
+                "transliteration": "bimei",
+                "briefTranslation": "nos dias de",
+                "contextualTranslation": "nos dias em que os juízes julgavam",
+                "lemma": "יוֹם",
+                "lemmaTranslation": "dia, tempo, período",
+                "analysis": {
+                    "class": "Substantivo",
+                    "gender": "masculino",
+                    "number": "plural",
+                    "state": "construto",
+                    "didactic": {
+                        "conceptTitle": "Substantivo: Plural Construto Masculino, com preposição בְּ",
+                        "identification": [
+                            {
+                                "feature": "Preposição בְּ",
+                                "indicator": "O prefixo בְּ (be) significa 'em' ou 'nos'. Quando anexado a substantivos, indica localização temporal ou espacial."
+                            },
+                            {
+                                "feature": "Estado Construto",
+                                "indicator": "A forma יְמֵי (yemei) é o plural construto de יוֹם (yom). O estado construto indica uma relação genitiva, equivalente ao 'de' em português."
+                            },
+                            {
+                                "feature": "Plural Masculino",
+                                "indicator": "A terminação ֵי- (ei) é característica do plural construto masculino. Compare com o plural absoluto יָמִים (yamim)."
+                            }
+                        ],
+                        "paradigm": {
+                            "headerRow": ["Estado", "Singular", "Plural"],
+                            "dataRows": [
+                                ["Absoluto", "יוֹם", "יָמִים"],
+                                ["Construto", "יוֹם", "יְמֵי"],
+                                ["Com sufixo", "יוֹמִי", "יָמַי"]
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "hebrew": "שְׁפֹט",
+                "transliteration": "shefot",
+                "briefTranslation": "julgar",
+                "contextualTranslation": "o julgar dos juízes",
+                "lemma": "שָׁפַט",
+                "lemmaTranslation": "julgar, governar, decidir",
+                "analysis": {
+                    "class": "Verbo",
+                    "binyan": "Qal",
+                    "form": "Infinitivo Construto",
+                    "didactic": {
+                        "conceptTitle": "Verbo: Qal Infinitivo Construto",
+                        "identification": [
+                            {
+                                "feature": "Infinitivo Construto",
+                                "indicator": "A forma שְׁפֹט (shefot) é o infinitivo construto do verbo שָׁפַט. O infinitivo construto é usado após preposições e em construções genitivas."
+                            },
+                            {
+                                "feature": "Padrão Vocálico",
+                                "indicator": "O padrão sheva + holem (שְׁפֹט) é típico do infinitivo construto Qal para verbos de raiz forte."
+                            }
+                        ],
+                        "paradigm": {
+                            "headerRow": ["Forma", "Qal", "Nifal", "Piel"],
+                            "dataRows": [
+                                ["Inf. Construto", "שְׁפֹט", "הִשָּׁפֵט", "שַׁפֵּט"],
+                                ["Inf. Absoluto", "שָׁפוֹט", "הִשָּׁפוֹט", "שַׁפֵּט"]
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "hebrew": "הַשֹּׁפְטִים",
+                "transliteration": "hashoftim",
+                "briefTranslation": "os juízes",
+                "contextualTranslation": "os juízes que governavam Israel",
+                "lemma": "שׁוֹפֵט",
+                "lemmaTranslation": "juiz, governante",
+                "analysis": {
+                    "class": "Substantivo",
+                    "gender": "masculino",
+                    "number": "plural",
+                    "state": "absoluto",
+                    "didactic": {
+                        "conceptTitle": "Substantivo: Plural Absoluto Masculino com Artigo Definido",
+                        "identification": [
+                            {
+                                "feature": "Artigo Definido",
+                                "indicator": "O prefixo הַ (ha) é o artigo definido 'o/os'. Quando anexado a palavras que começam com שׁ, o ה recebe patah."
+                            },
+                            {
+                                "feature": "Plural Masculino",
+                                "indicator": "A terminação ִים- (im) é a marca padrão do plural masculino absoluto em hebraico."
+                            },
+                            {
+                                "feature": "Particípio Qal",
+                                "indicator": "שׁוֹפֵט é originalmente um particípio Qal ativo que se substantivou, significando 'aquele que julga'."
+                            }
+                        ],
+                        "paradigm": {
+                            "headerRow": ["Estado", "Singular", "Plural"],
+                            "dataRows": [
+                                ["Absoluto", "שׁוֹפֵט", "שׁוֹפְטִים"],
+                                ["Construto", "שׁוֹפֵט", "שׁוֹפְטֵי"],
+                                ["Com artigo", "הַשׁוֹפֵט", "הַשׁוֹפְטִים"]
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "verseNumber": "1:2",
+        "hebrewText": "וְשֵׁם הָאִישׁ אֱלִימֶלֶךְ וְשֵׁם אִשְׁתּוֹ נָעֳמִי וְשֵׁם שְׁנֵי בָנָיו מַחְלוֹן וְכִלְיוֹן אֶפְרָתִים מִבֵּית לֶחֶם יְהוּדָה וַיָּבֹאוּ שְׂדֵי מוֹאָב וַיִּהְיוּ שָׁם",
+        "words": [
+            {
+                "hebrew": "וְשֵׁם",
+                "transliteration": "veshem",
+                "briefTranslation": "e o nome",
+                "contextualTranslation": "E o nome do homem era Elimeleque",
+                "lemma": "שֵׁם",
+                "lemmaTranslation": "nome, reputação",
+                "analysis": {
+                    "class": "Substantivo",
+                    "gender": "masculino",
+                    "number": "singular",
+                    "state": "construto",
+                    "didactic": {
+                        "conceptTitle": "Substantivo: Singular Construto Masculino com Waw Copulativo",
+                        "identification": [
+                            {
+                                "feature": "Waw Copulativo",
+                                "indicator": "O prefixo וְ (ve) é o waw copulativo, equivalente a 'e' em português. Conecta esta frase à anterior."
+                            },
+                            {
+                                "feature": "Estado Construto",
+                                "indicator": "שֵׁם está no estado construto, indicando uma relação genitiva com a palavra seguinte (הָאִישׁ)."
+                            }
+                        ],
+                        "paradigm": null
+                    }
+                }
+            },
+            {
+                "hebrew": "הָאִישׁ",
+                "transliteration": "ha'ish",
+                "briefTranslation": "o homem",
+                "contextualTranslation": "do homem",
+                "lemma": "אִישׁ",
+                "lemmaTranslation": "homem, marido, pessoa",
+                "analysis": {
+                    "class": "Substantivo",
+                    "gender": "masculino",
+                    "number": "singular",
+                    "state": "absoluto",
+                    "didactic": {
+                        "conceptTitle": "Substantivo: Singular Absoluto Masculino com Artigo Definido",
+                        "identification": [
+                            {
+                                "feature": "Artigo Definido",
+                                "indicator": "הָ (ha) é o artigo definido. Quando anexado a אִישׁ, que começa com alef, o artigo recebe qamats."
+                            },
+                            {
+                                "feature": "Substantivo Irregular",
+                                "indicator": "אִישׁ é um substantivo com plural irregular: אֲנָשִׁים (anashim), não seguindo o padrão regular."
+                            }
+                        ],
+                        "paradigm": {
+                            "headerRow": ["Estado", "Singular", "Plural"],
+                            "dataRows": [
+                                ["Absoluto", "אִישׁ", "אֲנָשִׁים"],
+                                ["Construto", "אִישׁ", "אַנְשֵׁי"],
+                                ["Com artigo", "הָאִישׁ", "הָאֲנָשִׁים"]
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "verseNumber": "1:3",
+        "hebrewText": "וַיָּמָת אֱלִימֶלֶךְ אִישׁ נָעֳמִי וַתִּשָּׁאֵר הִיא וּשְׁנֵי בָנֶיהָ",
+        "words": [
+            {
+                "hebrew": "וַיָּמָת",
+                "transliteration": "vayamat",
+                "briefTranslation": "e morreu",
+                "contextualTranslation": "E morreu Elimeleque",
+                "lemma": "מוּת",
+                "lemmaTranslation": "morrer, falecer",
+                "analysis": {
+                    "class": "Verbo",
+                    "binyan": "Qal",
+                    "tense": "Imperfeito (Waw-Consecutivo)",
+                    "pgn": "3ms",
+                    "didactic": {
+                        "conceptTitle": "Verbo: Qal Imperfeito (Waw-Consecutivo), 3ª Masculino Singular - Verbo Lamed-He",
+                        "identification": [
+                            {
+                                "feature": "Verbo Lamed-He",
+                                "indicator": "מוּת é um verbo lamed-he (terceira radical ה). No imperfeito, a terminação é ת- em vez de ה-."
+                            },
+                            {
+                                "feature": "Waw-Consecutivo",
+                                "indicator": "וַיָּמָת mostra o padrão típico do waw-consecutivo com verbos lamed-he: וַ + duplicação do yod + qamats."
+                            }
+                        ],
+                        "paradigm": {
+                            "headerRow": ["Pessoa", "Perfeito", "Imperfeito", "Waw-Consec."],
+                            "dataRows": [
+                                ["3ms", "מֵת", "יָמוּת", "וַיָּמָת"],
+                                ["3fs", "מֵתָה", "תָּמוּת", "וַתָּמָת"],
+                                ["1cs", "מַתִּי", "אָמוּת", "וָאָמוּת"]
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "hebrew": "וַתִּשָּׁאֵר",
+                "transliteration": "vatisha'er",
+                "briefTranslation": "e ficou",
+                "contextualTranslation": "e ficou viúva",
+                "lemma": "שָׁאַר",
+                "lemmaTranslation": "restar, permanecer, sobrar",
+                "analysis": {
+                    "class": "Verbo",
+                    "binyan": "Nifal",
+                    "tense": "Imperfeito (Waw-Consecutivo)",
+                    "pgn": "3fs",
+                    "didactic": {
+                        "conceptTitle": "Verbo: Nifal Imperfeito (Waw-Consecutivo), 3ª Feminino Singular",
+                        "identification": [
+                            {
+                                "feature": "Binyan Nifal",
+                                "indicator": "O prefixo תִּ + duplicação da primeira radical (שּׁ) indica o binyan Nifal. Nifal frequentemente expressa voz passiva ou reflexiva."
+                            },
+                            {
+                                "feature": "3ª Feminino Singular",
+                                "indicator": "O prefixo תִּ indica 3ª pessoa feminina singular no imperfeito Nifal."
+                            }
+                        ],
+                        "paradigm": {
+                            "headerRow": ["Pessoa", "Nifal Imperfeito", "Waw-Consecutivo"],
+                            "dataRows": [
+                                ["3ms", "יִשָּׁאֵר", "וַיִּשָּׁאֵר"],
+                                ["3fs", "תִּשָּׁאֵר", "וַתִּשָּׁאֵר"],
+                                ["1cs", "אֶשָּׁאֵר", "וְנִשְׁאַרְתִּי"]
+                            ]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]
+
