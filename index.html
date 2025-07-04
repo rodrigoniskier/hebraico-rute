@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Gramatical Interativa: O Livro de Rute</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar-left">
+            <h1>Análise Gramatical Interativa: O Livro de Rute</h1>
+            <img src="rute.png" alt="O Livro de Rute" class="hero-image">
+            <p>Bem-vindo à plataforma de análise gramatical interativa do Livro de Rute. Explore cada palavra e aprofunde seus conhecimentos em hebraico bíblico.</p>
+            <nav>
+                <ul>
+                    <li><button class="chapter-button" data-chapter="1">Capítulo 1</button></li>
+                    <li><button class="chapter-button" data-chapter="2">Capítulo 2</button></li>
+                    <li><button class="chapter-button" data-chapter="3">Capítulo 3</button></li>
+                    <li><button class="chapter-button" data-chapter="4">Capítulo 4</button></li>
+                </ul>
+            </nav>
+            <div class="credits">
+                <p>Desenvolvido por RODRIGO NISKIER e GEMINI.</p>
+                <p>Hospedado no GitHub.</p>
+            </div>
+        </aside>
+        <main class="content-area">
+            <div id="welcome-screen">
+                <h2>Bem-vindo!</h2>
+                <p>Selecione um capítulo no menu à esquerda para iniciar a análise.</p>
+            </div>
+            <div id="chapter-view" style="display: none;">
+                <h2 id="chapter-title"></h2>
+                <div id="verse-list"></div>
+            </div>
+            <div id="analysis-view" style="display: none;">
+                <aside class="sidebar-right">
+                    <h3 id="analysis-verse-number"></h3>
+                    <button id="back-to-welcome">Voltar</button>
+                    <button id="prev-verse">Anterior</button>
+                    <button id="next-verse">Próximo</button>
+                    <div id="word-list"></div>
+                </aside>
+                <div class="word-analysis-area">
+                    <h3 id="word-analysis-title"></h3>
+                    <div id="word-details"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

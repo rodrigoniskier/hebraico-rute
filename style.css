@@ -1,0 +1,653 @@
+
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', 'Georgia', serif; /* Fonte serifada para o português */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f1eb 0%, #e8ddd4 100%);
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Esquerda */
+.sidebar-left {
+    width: 300px;
+    background: linear-gradient(180deg, #8B4513 0%, #A0522D 100%);
+    color: #fff;
+    padding: 25px;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow-y: auto;
+}
+
+.sidebar-left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+.sidebar-left h1 {
+    font-size: 1.9em;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-left .hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-left .hero-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+.sidebar-left p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-left nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-left nav ul li {
+    margin-bottom: 12px;
+}
+
+.sidebar-left .chapter-button {
+    background: linear-gradient(135deg, #CD853F 0%, #DAA520 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: 600;
+    width: 85%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-left .chapter-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.sidebar-left .chapter-button:hover {
+    background: linear-gradient(135deg, #DAA520 0%, #F4A460 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.sidebar-left .chapter-button:hover::before {
+    left: 100%;
+}
+
+.sidebar-left .chapter-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.sidebar-left .credits {
+    margin-top: auto;
+    font-size: 0.8em;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 15px;
+    width: 100%;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+}
+
+/* Área de Conteúdo Principal */
+.content-area {
+    flex-grow: 1;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 20px 20px 0;
+    margin: 10px 10px 10px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#welcome-screen,
+#chapter-view,
+#analysis-view {
+    text-align: center;
+    padding: 25px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#welcome-screen h2 {
+    color: #8B4513;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#welcome-screen p {
+    font-size: 1.1em;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Visualização de Capítulo */
+#chapter-view h2 {
+    color: #8B4513;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.verse-item {
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #f0f0f0;
+    text-align: left;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(248,248,248,0.8) 100%);
+}
+
+.verse-item:hover {
+    background: linear-gradient(135deg, #f8f5f0 0%, #ede7df 100%);
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-bottom-color: #CD853F;
+}
+
+.verse-number {
+    font-weight: bold;
+    margin-right: 15px;
+    color: #A0522D;
+    font-size: 1.1em;
+    display: inline-block;
+    min-width: 40px;
+}
+
+.hebrew-text {
+    font-family: 'Ezra SIL', 'SBL Hebrew', 'Noto Sans Hebrew', serif;
+    font-size: 1.3em;
+    direction: rtl;
+    unicode-bidi: embed;
+    line-height: 1.8;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Visualização de Análise */
+#analysis-view {
+    display: flex;
+    text-align: left;
+    gap: 20px;
+}
+
+.sidebar-right {
+    width: 280px;
+    background: linear-gradient(135deg, #f8f5f0 0%, #ede7df 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    max-height: 80vh;
+    border: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.sidebar-right h3 {
+    color: #8B4513;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    border-bottom: 2px solid #CD853F;
+    padding-bottom: 10px;
+}
+
+.sidebar-right button {
+    background: linear-gradient(135deg, #CD853F 0%, #DAA520 100%);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin-bottom: 12px;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.sidebar-right button:hover {
+    background: linear-gradient(135deg, #DAA520 0%, #F4A460 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.sidebar-right button:active {
+    transform: translateY(0);
+}
+
+.sidebar-right button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.word-list-item {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,248,248,0.9) 100%);
+    border: 1px solid rgba(139, 69, 19, 0.2);
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.word-list-item:hover {
+    background: linear-gradient(135deg, #f0ebe5 0%, #e8ddd4 100%);
+    transform: translateX(3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-color: #CD853F;
+}
+
+.word-list-item .hebrew-word {
+    font-family: 'Ezra SIL', 'SBL Hebrew', 'Noto Sans Hebrew', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    direction: rtl;
+    unicode-bidi: embed;
+    color: #8B4513;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.word-list-item .transliteration {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.word-list-item .basic-translation {
+    font-size: 0.85em;
+    color: #555;
+    font-weight: 500;
+}
+
+.word-analysis-area {
+    flex-grow: 1;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,248,248,0.95) 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 1px solid rgba(139, 69, 19, 0.1);
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.word-analysis-area h3 {
+    color: #8B4513;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    border-bottom: 3px solid #CD853F;
+    padding-bottom: 15px;
+}
+
+.word-details p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+.word-details strong {
+    color: #A0522D;
+    font-weight: 700;
+}
+
+.word-details h3,
+.word-details h4 {
+    color: #8B4513;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.word-details h4 {
+    font-size: 1.2em;
+    border-left: 4px solid #CD853F;
+    padding-left: 15px;
+}
+
+/* Estilos para destaque didático (exemplo) */
+.grammatical-class-verb {
+    color: #007bff; /* Azul para verbos */
+    font-weight: bold;
+}
+
+.grammatical-class-noun {
+    color: #28a745; /* Verde para substantivos */
+    font-weight: bold;
+}
+
+.grammatical-feature {
+    background-color: #ffeeba; /* Amarelo claro para features */
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.paradigm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.paradigm-table th,
+.paradigm-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.paradigm-table th {
+    background-color: #e0e0e0;
+    color: #555;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar-left,
+    .sidebar-right {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .sidebar-left {
+        padding-bottom: 0;
+    }
+
+    .sidebar-left .chapter-button {
+        width: 90%;
+    }
+
+    #analysis-view {
+        flex-direction: column;
+    }
+}
+
+
+/* Estilos para destaque didático */
+.grammatical-class-verb {
+    color: #007bff;
+    font-weight: bold;
+    background: rgba(0, 123, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.grammatical-class-noun {
+    color: #28a745;
+    font-weight: bold;
+    background: rgba(40, 167, 69, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.grammatical-feature {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #f6d55c;
+    display: inline-block;
+    margin: 2px;
+    font-weight: 600;
+    color: #856404;
+}
+
+.paradigm-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.paradigm-table th,
+.paradigm-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.paradigm-table th {
+    background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.paradigm-table td {
+    background: rgba(255,255,255,0.8);
+    transition: background-color 0.3s ease;
+}
+
+.paradigm-table tr:nth-child(even) td {
+    background: rgba(248,248,248,0.8);
+}
+
+.paradigm-table tr:hover td {
+    background: rgba(205, 133, 63, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar-left {
+        width: 100%;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .content-area {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .sidebar-left .chapter-button {
+        width: 90%;
+    }
+
+    #analysis-view {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sidebar-right {
+        width: 100%;
+        max-height: 40vh;
+    }
+
+    .word-analysis-area {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar-left {
+        padding: 15px;
+    }
+
+    .sidebar-left h1 {
+        font-size: 1.5em;
+    }
+
+    .content-area {
+        padding: 20px;
+    }
+
+    #welcome-screen h2 {
+        font-size: 1.8em;
+    }
+
+    #chapter-view h2 {
+        font-size: 1.6em;
+    }
+
+    .verse-item {
+        padding: 12px;
+    }
+
+    .hebrew-text {
+        font-size: 1.1em;
+    }
+
+    .word-analysis-area h3 {
+        font-size: 1.3em;
+    }
+
+    .paradigm-table th,
+    .paradigm-table td {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar-left h1 {
+        font-size: 1.3em;
+    }
+
+    .sidebar-left p {
+        font-size: 0.85em;
+    }
+
+    .content-area {
+        padding: 15px;
+    }
+
+    .verse-item {
+        padding: 10px;
+    }
+
+    .verse-number {
+        min-width: 30px;
+        font-size: 1em;
+    }
+
+    .hebrew-text {
+        font-size: 1em;
+    }
+
+    .word-list-item {
+        padding: 10px;
+    }
+
+    .word-analysis-area {
+        padding: 15px;
+    }
+}
+
+/* Animações adicionais */
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.sidebar-left {
+    animation: slideInFromLeft 0.6s ease-out;
+}
+
+.sidebar-right {
+    animation: slideInFromRight 0.6s ease-out;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(139, 69, 19, 0.1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #CD853F 0%, #DAA520 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #DAA520 0%, #F4A460 100%);
+}
+
